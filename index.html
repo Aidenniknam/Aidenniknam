@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>وب‌سایت شخصی</title>
+    <title>My Personal Website</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -17,11 +17,32 @@
             color: white;
             padding: 20px;
             font-size: 24px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background-color: #005f8b;
+            padding: 10px;
+            position: fixed;
+            top: 60px;
+            width: 100%;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
         }
         section {
-            padding: 40px;
+            padding: 80px 20px 40px;
             background: white;
-            margin: 20px;
+            margin: 80px 20px 20px;
             border-radius: 8px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
@@ -35,36 +56,51 @@
             max-width: 800px;
             margin: auto;
         }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
     <header>
-        وب‌سایت شخصی من
+        My Personal Website
     </header>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+    </nav>
     <div class="container">
         <section id="about">
-            <h2>درباره من</h2>
-            <p>اینجا می‌توانید توضیحی درباره خودتان بنویسید.</p>
+            <h2>About Me</h2>
+            <img src="profile.jpg" alt="Profile Picture" class="profile-img">
+            <p>Write a short introduction about yourself here.</p>
         </section>
         <section id="skills">
-            <h2>مهارت‌ها</h2>
-            <p>لیستی از مهارت‌های خود را در این بخش اضافه کنید.</p>
+            <h2>Skills</h2>
+            <p>List your skills in this section.</p>
         </section>
         <section id="projects">
-            <h2>پروژه‌ها</h2>
-            <p>توضیحاتی درباره پروژه‌هایی که انجام داده‌اید.</p>
+            <h2>Projects</h2>
+            <p>Provide details about your projects.</p>
         </section>
         <section id="certifications">
-            <h2>گواهینامه‌ها</h2>
-            <p>فهرستی از گواهینامه‌هایی که دریافت کرده‌اید.</p>
+            <h2>Certifications</h2>
+            <p>List your certifications here.</p>
         </section>
         <section id="contact">
-            <h2>تماس با من</h2>
-            <p>ایمیل: example@email.com</p>
+            <h2>Contact</h2>
+            <p>Email: example@email.com</p>
         </section>
     </div>
     <footer>
-        © 2025 تمامی حقوق محفوظ است.
+        © 2025 All rights reserved.
     </footer>
 </body>
 </html>
